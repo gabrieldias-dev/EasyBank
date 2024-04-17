@@ -1,0 +1,142 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+    --var-headerHeight: 9rem;
+
+  --var-DarkBlue: rgb(45, 49, 77);
+  --var-LimeGreen: rgb(49, 211, 92);
+  --var-BrightCyan: rgb(43, 183, 218);
+
+  --var-GrayishBlue: rgb(150, 152, 166);
+  --var-LightGrayishBlue: rgb(243, 244, 246);
+  --var-VeryLightGray: rgb(250, 250, 250);
+  --var-White: rgb(255, 255, 255);
+}
+
+html {
+    font-family: "Open Sans", sans-serif;
+}
+
+body, main {
+    max-width: 100vw;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.alinhamentoGeral {
+  width: min( 144rem, 100%); 
+  padding: 0 4rem;
+  overflow: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: var(--var-GrayishBlue);
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: var(--var-headerHeight);
+    padding: 2rem 0;
+    color: var(--var-White);
+    z-index: 10;
+}
+
+header > .alinhamentoGeral {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+}
+
+.navigation {
+    display: flex;
+    gap: 3rem;
+}
+
+.navigation a {
+    font-size: 1.5rem;
+    
+}
+
+.btn-invite {
+    color: var(--var-White);
+    font-size: 1.5rem;
+    padding: 1rem 3rem;
+    border-radius: 2rem;
+    background-image: linear-gradient(to right, var(--var-LimeGreen), var(--var-BrightCyan));
+}
+
+/* --------------- Section Home ---------------  */
+
+.sectionHome {
+    position: relative;
+    max-width: 100vw;
+    height: 75vh;
+    background-color: var(--var-VeryLightGray);
+    display: flex;
+    justify-content: center;  
+}
+
+.sectionHome .alinhamentoGeral {
+    height: 100%;
+    display: flex;
+    overflow: hidden;
+   
+}
+
+.information-left {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    padding-right: 15rem ;
+}
+
+h1 {
+    font-size: 6.5rem;
+    color: var(--var-DarkBlue);
+    font-weight: 400;
+}
+
+.information-left p {
+    
+    font-size: 2rem;
+    color: var(--var-DarkBlue);
+}
+
+.box-btn-invite {
+    margin-top: 2rem;
+}
+
+.imagem-home {
+    width: 50%;
+  
+    overflow: hidden;
+}
+
+.imagem-home .img-backdround {
+    position: absolute;
+    right: -30rem;
+    top: -25rem;
+    z-index: 0;
+}
+
+.img-celulares {
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    top: -12rem;
+}
+
