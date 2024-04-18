@@ -28,7 +28,7 @@ html {
 body, main {
     max-width: 100vw;
     min-height: 100vh;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 .alinhamentoGeral {
@@ -64,8 +64,19 @@ header > .alinhamentoGeral {
 }
 
 .navigation a {
+    position: relative;
     font-size: 1.5rem;
     
+}
+
+.navigation a:hover::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-image: linear-gradient(to right, var(--var-LimeGreen), var(--var-BrightCyan));
+    bottom: -1rem;
+    right: 0;
 }
 
 .btn-invite {
@@ -74,6 +85,11 @@ header > .alinhamentoGeral {
     padding: 1rem 3rem;
     border-radius: 2rem;
     background-image: linear-gradient(to right, var(--var-LimeGreen), var(--var-BrightCyan));
+}
+
+.btn-invite:hover {
+    /* background-image: linear-gradient(to right, rgb(91, 211, 123), rgb(131, 205, 226)); */
+    filter: brightness(108%);
 }
 
 /* --------------- Section Home ---------------  */
@@ -113,7 +129,7 @@ h1 {
 .information-left p {
     
     font-size: 2rem;
-    color: var(--var-DarkBlue);
+    color: var(--var-GrayishBlue);
 }
 
 .box-btn-invite {
@@ -140,3 +156,147 @@ h1 {
     top: -12rem;
 }
 
+/*--------------- Section Informações --------------- */
+
+.sectionInformation {
+    width: 100%;
+    background-color: var(--var-LightGrayishBlue);
+    display: flex;
+    justify-content: center;  
+    padding: 10rem 0;
+}
+
+.sectionInformation .alinhamentoGeral {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.titulo-information{
+    width: 100%;
+    margin-bottom: 5rem;
+}
+
+h2 {
+    font-size: 3.5rem;
+    color: var(--var-DarkBlue);
+    font-weight: 400;
+    margin-bottom: 1.5rem;
+}
+
+.titulo-information p {
+    font-size: 1.7rem;
+    color: var(--var-GrayishBlue);
+
+}
+
+.cards-information {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.cards {
+    width: 30rem;
+}
+
+.cards img {
+    margin-bottom: 3rem;
+}
+
+.cards p {
+    font-size: 1.7rem;
+    color: var(--var-GrayishBlue);
+}
+
+h3 {
+    font-size: 2.5rem;
+    color: var(--var-DarkBlue);
+    font-weight: 400;
+    margin-bottom: 2rem;
+
+}
+
+/*--------------- Section Articles --------------- */
+
+.sectionArticles {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 10rem 0;
+    background-color: var(--var-VeryLightGray);
+}
+
+.sectionArticles .alinhamentoGeral {
+
+}
+
+.boxArticles {
+    width: 100%;
+   
+    display: flex;
+    justify-content: space-between;
+}
+
+.cardsArticles {
+    width: 28rem;
+    background-color: var(--var-White);
+    border-radius: 1rem 1rem 0 0;
+    overflow: hidden;
+}
+
+.boxImagem {
+    width: 100%;
+    height: 21rem;
+}
+
+.boxImagem img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.boxInformation {
+    width: 100%;
+    height: 100%;
+    padding: 2rem ;
+}
+
+h4 {
+    font-size: 1.7rem;
+    color: var(--var-DarkBlue);
+    font-weight: 500;
+    margin: 1rem 0;
+}
+
+h4:hover {
+    color: var(--var-LimeGreen);
+    cursor: pointer;
+}
+
+.boxInformation p {
+    font-size: 1.4rem;
+    color: var(--var-GrayishBlue);
+}
+
+.boxInformation p:nth-child(1) {
+    font-size: 1.2rem;
+}
+
+/* ----------------- FOOTER -------------------- */
+
+footer {
+    width: 100%;
+    padding: 5rem 0;
+    background-color: var(--var-DarkBlue);
+    display: flex;
+    justify-content: center;
+}
+
+footer .alinhamentoGeral {
+    display: flex; 
+    justify-content: space-evenly;
+}
