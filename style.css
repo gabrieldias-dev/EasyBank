@@ -230,10 +230,6 @@ h3 {
     background-color: var(--var-VeryLightGray);
 }
 
-.sectionArticles .alinhamentoGeral {
-
-}
-
 .boxArticles {
     width: 100%;
    
@@ -300,3 +296,53 @@ footer .alinhamentoGeral {
     display: flex; 
     justify-content: space-evenly;
 }
+
+.links-footer, .menu-footer, .btn-footer {
+    width: 100%;
+    height: 100%;
+}
+
+.links-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.icons-sociais {
+    width: 100%;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.menu-footer {
+    color: var(--var-LightGrayishBlue);
+    font-size: 1.3rem;
+    display: flex;
+    gap: 25%;
+}
+
+.menu-footer div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1.2rem;
+}
+
+.menu-footer div p:hover {
+    color: var(--var-LimeGreen);
+    cursor: pointer;
+}
+
+.btn-footer  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    
+} 
+
+.btn-footer p {
+    font-size: 1.3rem;
+    color: var(--var-GrayishBlue);
+}
+
